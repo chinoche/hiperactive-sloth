@@ -1,0 +1,27 @@
+{
+    "source": {
+      "include": ["src"],
+      "includePattern": ".+\\.tsx?$",
+      "excludePattern": "(node_modules/|docs/)"
+    },
+    "plugins": ["plugins/markdown", "jsdoc-plugin-typescript"],
+    "opts": {
+      "encoding": "utf8",
+      "destination": "docs/",
+      "recurse": true,
+      "verbose": true,
+      "readme": "README.md"
+    },
+    "templates": {
+      "cleverLinks": false,
+      "monospaceLinks": false
+    },
+    "markdown": {
+      "parser": "gfm",
+      "hardwrap": true
+    },
+    "typescript": {
+      "moduleRoot": "src"
+    }
+  }
+  
