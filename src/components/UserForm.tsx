@@ -106,17 +106,6 @@ const UserForm: React.FC = () => {
           />
         </div>
       </div>
-      <div className="grid grid-cols-1">
-        <label htmlFor="description" className="block">
-          Description:
-        </label>
-        <textarea
-          placeholder="Desciption for this user"
-          id="description"
-          name="description"
-          className="w-full px-4 py-2 border border-gray-300 rounded"
-        ></textarea>
-      </div>
 
       <button
         type="submit"

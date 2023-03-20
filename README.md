@@ -56,3 +56,22 @@ npm run dev
 And enjoy the HMR that vite will provide, just make sure to open the url prompted in the  command interface
 
 Enjoy!
+
+# TODO
+
+- Implement a UI component for displaying the errors on any of the endpoints, the logic for for any other status that 
+is not 'succeeded has been implemented in the reducers, but the UI elemnt hasn't been made ye :P
+- Error Boundaries for the components and a better tracing
+- SSR and Server Side Fetching: vite allow us to implement this, but since there isn't a lot of data for the initial 
+print wasn't implemented, it could affect the experience in the app
+- Migrate to react query and the state management only if we need to implement certain cache strategies,
+we can use createAPI from  the redux toolkit and declare the middleware in our store to work properly
+- Add all the fields that the user requires in different arts of the form using toggle controld for displaying 
+everything at once
+- Implement .env for the dev environment and docker, since this is only focused to use the proxy, the BASE URL was 
+declared in the ts file, however, if this application expands, it is recommended to use env variables and if a proxy is 
+not used, implement an interceptor so we can add auth tokens, jwt and custom headers for getting authorization to the
+APIs directly  
+
+
+
