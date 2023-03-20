@@ -9,6 +9,7 @@ const EditUserForm: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const dispatch = useDispatch<AppDispatch>();
   const navigate = useNavigate();
+  // @ts-ignore
   const {data: user, isLoading } = useFetchUserQuery(id);
 
 
